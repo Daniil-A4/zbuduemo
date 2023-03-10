@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="adaptive.css">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="icons.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="swiper.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <!-- FAVICONS ICON -->
+  <link rel="shortcut icon" type="image/png" href="" />
+
+  
+  <script src="jquery.min.js"></script>
+  <script src="gsap.min.js"></script>
+  <script src="app.js" type="module"></script>
+  <script defer src="script.js"></script>
+
+  <title>zbuduemo</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="bg">
+      <img src="./image/hero-bg.jpeg" alt="">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <header class="header">
+      <a class="header-logo" href="">zbuduemo.</a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__link"></li>
+          <li class="header__link"><a class="header__item" href="">Services</a></li>
+          <li class="header__link"><a class="header__item" href="">Gallery</a></li>
+          <li class="header__link"><a class="header__item" href="">Contacts</a></li>
+          <li class="header__link">
+            <div class="header__item">
+              <a class="header__languale" href="">UA<span></span></a>
+              <a class="header__languale lang-en" href="">EN</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="icon-menu">
+        <span></span>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container _container">
+          <div class="hero__body">
+            <div class="hero__offer">Architecture</div>
+            <p class="hero__sub-text">Professional solutions for your space</p>
+            <div class="hero__line-wrapper">
+              <div class="hero__line">
+                <a href="#popup-header" class="hero__line-button popup-link"><span class="hero__line-button-text">Talk to us</span></a>
+              </div>
+            </div>
+            <ul class="hero__socials">
+              <li><a href=""><i class="social-icon icon-facebook"></i></a></li>
+              <li><a href=""><i class="social-icon icon-instagram"></i></a></li>
+              <li><a href=""><i class="social-icon icon-telegram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz">
+        <div class="quiz__container _container">
+          
+          <div  class="quiz__body">
+            <div class="quiz__title">
+              <h4>Розрахуйте орієнтовну вартість Вашого ремонту</h4>
+            </div>
+            <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="quiz-wrapper">
+            </div>
+            <div class="quiz-send-data" hidden>
+              <div class="quiz-send-data__item">
+                <h3 class="quiz-send-data__title">Thanks for the answers! Get the result of the calculation within 1 hour by leaving contacts </h3>
+                <form class="quiz-send-data__form" action="javascript:">
+                  <p><input class="quiz-send-data__name" type="text" name="name" placeholder="Name"></p>
+                  <p><input class="quiz-send-data__number" type="tel" name="phome" placeholder="Number*"></p>
+                  <button class="quiz-send-data__button" type="submit">Send</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__container _container">
+          <div class="gallery__body">
+            <h3 class="gallery__title">Our projects</h3>
+            <!-- <div class="scrollbar"></div> -->
+            <div class="gallery-swiper swiper-container">
+              <div class="slider__arrows">
+                <button type="button" class="slider__arrow slider-arrow_prev icon-arrow-left"></button>
+                <button type="button" class="slider__arrow slider-arrow_next icon-arrow-right"></button>
+              </div>
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="gallery__project">
+                      <a class="gallery__image icon-arrow_next_right_icon" data-fancybox="project-1" href="./image/hero-bg.jpeg"><!--Ссылка на главную фото-->
+                        <img alt="" src="./image/hero-bg.jpeg" style="display: block;">
+                        <div class="gallery__img-subtitle">
+                          <span>Project name 1</span>
+                        </div>
+                      </a>
+                      <a data-fancybox="project-1" href="./image/gallery/g1/01.jpg" class="gallery__image hide"><img src="./image/gallery/g1/01.jpg"></a>
+                      <a data-fancybox="project-1" href="./image/gallery/g1/02.jpg" class="gallery__image hide"><img src="./image/gallery/g1/02.jpg"></a>
+                      <a data-fancybox="project-1" href="./image/gallery/g1/03.jpg" class="gallery__image hide"><img src="./image/gallery/g1/03.jpg"></a>
+                      <a data-fancybox="project-1" href="./image/gallery/g1/04.jpg" class="gallery__image hide"><img src="./image/gallery/g1/04.jpg"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="gallery__project">
+                      <a class="gallery__image icon-arrow_next_right_icon" data-fancybox="project-2" href="./image/gallery/g2/bg-thanks.jpeg"><!--Ссылка на главную фото-->
+                        <img alt="" src="./image/gallery/g2/bg-thanks.jpeg" style="display: block;">
+                        <div class="gallery__img-subtitle">
+                          <span>Project name 2</span>
+                        </div>
+                      </a>
+                      <a data-fancybox="project-2" href="./image/gallery/g1/01.jpg" class="gallery__image hide"><img src="./image/gallery/g1/01.jpg"></a>
+                      <a data-fancybox="project-2" href="./image/gallery/g1/02.jpg" class="gallery__image hide"><img src="./image/gallery/g1/02.jpg"></a>
+                      <a data-fancybox="project-2" href="./image/gallery/g1/03.jpg" class="gallery__image hide"><img src="./image/gallery/g1/03.jpg"></a>
+                      <a data-fancybox="project-2" href="./image/gallery/g1/04.jpg" class="gallery__image hide"><img src="./image/gallery/g1/04.jpg"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="gallery__project">
+                      <a class="gallery__image icon-arrow_next_right_icon" data-fancybox="project-3" href="./image/ob2-1.jpeg"><!--Ссылка на главную фото-->
+                        <img alt="" src="./image/ob2-1.jpeg" style="display: block;">
+                        <div class="gallery__img-subtitle">
+                          <span>Project name 3</span>
+                        </div>
+                      </a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/01.jpg" class="gallery__image hide"><img src="./image/gallery/g1/01.jpg"></a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/02.jpg" class="gallery__image hide"><img src="./image/gallery/g1/02.jpg"></a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/03.jpg" class="gallery__image hide"><img src="./image/gallery/g1/03.jpg"></a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/04.jpg" class="gallery__image hide"><img src="./image/gallery/g1/04.jpg"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="gallery__project">
+                      <a class="gallery__image icon-arrow_next_right_icon" data-fancybox="project-4" href="./image/gallery/g3/01.jpg"><!--Ссылка на главную фото-->
+                        <img alt="" src="./image/gallery/g3/01.jpg" style="display: block;">
+                        <div class="gallery__img-subtitle">
+                          <span>Project name 4</span>
+                        </div>
+                      </a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/01.jpg" class="gallery__image hide"><img src="./image/gallery/g1/01.jpg"></a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/02.jpg" class="gallery__image hide"><img src="./image/gallery/g1/02.jpg"></a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/03.jpg" class="gallery__image hide"><img src="./image/gallery/g1/03.jpg"></a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/04.jpg" class="gallery__image hide"><img src="./image/gallery/g1/04.jpg"></a>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="gallery__project">
+                      <a class="gallery__image  icon-arrow_next_right_icon" data-fancybox="project-4" href="./image/gallery/g4/02.jpg"><!--Ссылка на главную фото-->
+                        <img alt="" src="./image/gallery/g4/02.jpg" style="display: block;">
+                        <div class="gallery__img-subtitle">
+                          <span>Project name 5</span>
+                        </div>
+                      </a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/01.jpg" class="gallery__image hide"><img src="./image/gallery/g1/01.jpg"></a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/02.jpg" class="gallery__image hide"><img src="./image/gallery/g1/02.jpg"></a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/03.jpg" class="gallery__image hide"><img src="./image/gallery/g1/03.jpg"></a>
+                      <a data-fancybox="project-3" href="./image/gallery/g1/04.jpg" class="gallery__image hide"><img src="./image/gallery/g1/04.jpg"></a>
+                    </div>
+                  </div>
+              </div>
+              <div class="scrollbar swiper-scrollbar"></div>
+              
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="send-form">
+        <div class="send-form__container _container">
+          <div class="send-form__body">
+            <div data-aos="fade-right" class="send-form__card">
+              <h3 class="send-form__title"><span>Ready</span> to discuss your project with us?</h3>
+              <p class="send-form__sub-title">Leave a <span>request</span> and we will contact you</p>
+              <form class="send-form__form" action="javascript:">
+                <p>
+                  <input type="text" name="name" placeholder="Name" required pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$">
+                </p>
+                <p>
+                  <input type="tel" name="number" placeholder="Your phone number*" required 
+                  pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}">
+                </p>
+                <p>
+                  <button class="send-form__button">Send</button>
+                </p>
+              </form>
+            </div>
+            <div data-aos="fade-left" class="send-form__img">
+              <img src="./image/ob1-5.jpeg" alt="">
+            </div>
+            
+          </div>
+          <div class="box">25</div>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+    <div id="popup-header" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="popup-header__close close-popup">&times;</a>
+          <h4 class="popap-header__title">Ми зв'яжемося з Вами найближчим часом!</h4>
+          <form class="popup-header__form" action="javascript:">
+            <p><input name="name" class="popup-header__name" type="text" placeholder="Ім'я" required
+                pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$"></p>
+            <p><input name="number" class="popup-header__number" type="tel" placeholder="+38 (_ _ _) _ _ _ - _ _ - _ _"
+                required pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
+            <p>
+              <button class="popup-header__button">Надіслати</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

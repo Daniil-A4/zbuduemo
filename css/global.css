@@ -36,6 +36,7 @@ body {
   --red-color: #cf584c;
   --red-color: coral;
   --grey-color: #707070;
+  width: 100vw;
 }
 
 ._ibg {

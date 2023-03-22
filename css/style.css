@@ -138,6 +138,7 @@
 .header-logo-dot {
   vertical-align: sub;
 }
+
 /* .header-logo::after {
   content: '';
   position: absolute;
@@ -239,11 +240,12 @@
 
 
 .hero__sub-text {
-  font-size: 24px;
-  height: 20px;
-  margin-bottom: calc(20vh - 20px);
+  font-size: 15px;
+  height: 50px;
+  margin-bottom: calc(20vh - 50px);
   font-weight: 100;
   letter-spacing: 1px;
+  line-height: 150%;
 }
 
 .hero__line-wrapper {
@@ -312,7 +314,7 @@
 .hero__socials {
   position: absolute;
   top: 25vh;
-  right: 0;
+  right: 16px;
 }
 
 .hero__socials li:not(:last-child) {
@@ -320,7 +322,7 @@
 }
 
 .social-icon {
-  font-size: 25px;
+  font-size: 21px;
   color: #ffffff;
   transition: all 0.3s ease 0s;
 }
@@ -336,7 +338,7 @@
 /* ================about-us========================================= */
 
 .about {
-  padding: 100px 0;
+  padding: 150px 0;
   color: #000;
   background-color: #f0f0f0;
 }
@@ -359,14 +361,14 @@
   padding-right: 20px;
 }
 
-.about__title::after {
+/* .about__title::after {
   content: '';
   position: absolute;
   top: 37%;
   width: 70px;
   height: 1px;
   background-color: var(--grey-color);
-}
+} */
 
 .about__wrapper {}
 
@@ -391,7 +393,7 @@
   letter-spacing: 0.7px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 110%;
+  line-height: 114%;
 }
 
 .text-grey {
@@ -661,6 +663,7 @@ fieldset label:has(:checked)::after {
   color: #ffffff;
 }
 
+
 @media (any-hover: hover) {
   .button-block button:not(:disabled):hover {
     background-color: var(--red-color);
@@ -692,9 +695,12 @@ fieldset label:has(:checked)::after {
 }
 
 .quiz-send-data__title {
-  font-size: 26px;
-  margin-bottom: 2vh;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  margin-bottom: 4vh;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .quiz-send-data__title span {
@@ -702,7 +708,9 @@ fieldset label:has(:checked)::after {
 }
 
 .quiz-send-data__sub-title {
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .quiz-send-data__form {
@@ -715,9 +723,9 @@ fieldset label:has(:checked)::after {
   height: 40px;
   background: none;
   padding-left: 5px;
-  font-size: 18px;
-  /* background-color: #fbfbfb; */
-  border: 1px solid rgb(255, 255, 255);
+  font-size: 14px;
+  background: none;
+  border-bottom: 1px solid white;
   color: #ffffff;
   margin-bottom: 30px;
   /* border-radius: 7px; */
@@ -739,6 +747,33 @@ fieldset label:has(:checked)::after {
   transition: all 0.3s ease 0s;
   letter-spacing: 1.3px;
   text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.quiz-send-data__button::before {
+  content: '';
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 33.33%, var(--red-color) 66.66%);
+  transition: 0.7s;
+  z-index: -1;
+}
+
+@media (any-hover:hover) {
+  .quiz-send-data__button:hover:before {
+    color: #ffffff;
+    left: -300px;
+  }
+
+  .quiz-send-data__button:hover {
+    color: #ffffff;
+  }
 }
 
 @media (any-hover:hover) {
@@ -763,7 +798,7 @@ fieldset label:has(:checked)::after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(../image/hero-bg.jpeg) center no-repeat;
+  background: url(../image/IMG_3014.jpg) center/cover no-repeat;
   position: relative;
   /* margin: -100px 0; */
 }
@@ -775,14 +810,14 @@ fieldset label:has(:checked)::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #00000093;
+  background-color: #00000055;
 }
 
 .thanks__top-text {
-  margin: 0 0 40px;
+  margin: 0 0 30px;
   text-transform: uppercase;
   letter-spacing: 0.7px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   z-index: 30;
   position: relative;
@@ -793,12 +828,14 @@ fieldset label:has(:checked)::after {
   /* color: #262626; */
   z-index: 30;
   position: relative;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* ================services========================================= */
 
 .services {
-  padding: 100px 0;
+  padding: 150px 0;
   background-color: #f0f0f0;
 }
 
@@ -845,14 +882,16 @@ fieldset label:has(:checked)::after {
 }
 
 .services__sub-title {
-  flex: 0 1 20%;
+  flex: 0 1 25%;
   letter-spacing: 0.7px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
+  padding-right: 20px;
+  text-transform: uppercase;
 }
 
 .services__text {
-  flex: 0 1 80%;
+  flex: 0 1 75%;
   letter-spacing: 0.7px;
   font-size: 14px;
   font-weight: 400;
@@ -897,6 +936,7 @@ fieldset label:has(:checked)::after {
   height: 100%;
   z-index: 2;
   transform: translate(-100%, 0);
+  background-color: #f0f0f0;
 }
 
 .gallery__columns {
@@ -1055,9 +1095,20 @@ fieldset label:has(:checked)::after {
 /* ====================send-form================================================================== */
 
 .send-form {
-  padding: 100px 0;
+  padding: 120px 0;
   background-color: #1f1f1f;
-  /* margin-bottom: 800px; */
+  background: url(../image/2.jpg) center/cover no-repeat fixed;
+  position: relative;
+}
+
+.send-form::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a9;
 }
 
 .send-form__container {}
@@ -1073,13 +1124,17 @@ fieldset label:has(:checked)::after {
 }
 
 .send-form__title {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .send-form__sub-title {
   margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .send-form__title span {
@@ -1090,8 +1145,12 @@ fieldset label:has(:checked)::after {
   width: 100%;
 }
 
-.send-form__form p:not(:last-child) {
+.send-form__form p:nth-child(1) {
   margin-bottom: 22px;
+}
+
+.send-form__form p:nth-child(2) {
+  margin-bottom: 50px;
 }
 
 .send-form__form input {
@@ -1105,12 +1164,14 @@ fieldset label:has(:checked)::after {
 
 .send-form__form input::placeholder {
   color: #ffffff;
+  font-size: 14px;
 }
 
 .send-form__button {
   height: 40px;
-  background-color: #fff;
-  color: #000;
+  background-color: unset;
+  color: #fcfbfb;
+  border: 1px solid #fcfbfb;
   padding: 0 70px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
@@ -1118,11 +1179,32 @@ fieldset label:has(:checked)::after {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.7px;
+  position: relative;
+  overflow: hidden;
+  color: #000;
 }
 
-.send-form__button:hover {
-  color: #ffffff;
-  background-color: var(--red-color);
+.send-form__button::before {
+  content: '';
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 33.33%, var(--red-color) 66.66%);
+  transition: 0.7s;
+  z-index: -1;
+}
+
+@media (any-hover:hover) {
+  .send-form__button:hover:before {
+    color: #ffffff;
+    left: -300px;
+  }
+
+  .send-form__button:hover {
+    color: #ffffff;
+  }
 }
 
 
@@ -1186,7 +1268,7 @@ fieldset label:has(:checked)::after {
   letter-spacing: 0.7px;
   font-size: 14px;
   font-weight: 500;
-  padding-right: 170px;
+  padding-right: 175px;
 }
 
 .backstage__item {
@@ -1194,11 +1276,15 @@ fieldset label:has(:checked)::after {
 }
 
 .backstage__text {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   letter-spacing: 0.7px;
   font-size: 14px;
   font-weight: 400;
   line-height: 110%;
+  
+}
+.backstage__text:nth-child(2) {
+  margin-bottom: 80px;
   color: var(--grey-color);
 }
 
@@ -1222,8 +1308,8 @@ fieldset label:has(:checked)::after {
 /* ====================footer================================================================== */
 
 .footer {
-  padding-top: 70px;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 70px;
   background-color: white;
   color: #323232;
 }
@@ -1232,8 +1318,10 @@ fieldset label:has(:checked)::after {
 
 .footer__body {
   display: flex;
+  align-items: center;
 
 }
+
 .footer__title-991 {
   display: none;
 }
@@ -1244,13 +1332,15 @@ fieldset label:has(:checked)::after {
 
 .footer__column-form {
   flex: 0 1 40%;
+  margin-top: 25px;
 }
+
 .footer__column-contacts {
   flex: 0 1 60%;
 }
 
 .footer__form-sub-title {
-  color: #323232;
+  color: var(--grey-color);
   letter-spacing: 0.7px;
   font-size: 14px;
   font-weight: 500;
@@ -1258,11 +1348,16 @@ fieldset label:has(:checked)::after {
 }
 
 .footer__form {
+  margin-top: 50px;
   width: 60%;
 }
 
 .footer__form p {
   margin-bottom: 30px;
+}
+
+.footer__form p:nth-child(2) {
+  margin-bottom: 50px;
 }
 
 .footer__form input {
@@ -1273,12 +1368,11 @@ fieldset label:has(:checked)::after {
 }
 
 .footer__form input::placeholder {
-  color: #323232;
+  color: var(--grey-color);
 }
 
 .footer__button {
   height: 30px;
-  background-color: #fff;
   border: 1px solid #b2b2b2;
   color: #000;
   padding: 0 40px;
@@ -1288,6 +1382,35 @@ fieldset label:has(:checked)::after {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.7px;
+  z-index: 1;
+  background-color: unset;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #000;
+}
+
+.footer__button::before {
+  content: '';
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 33.33%, var(--red-color) 66.66%);
+  transition: 0.7s;
+  z-index: -1;
+}
+
+@media (any-hover:hover) {
+  .footer__button:hover:before {
+    color: #ffffff;
+    left: -300px;
+  }
+
+  .footer__button:hover {
+    color: #ffffff;
+  }
 }
 
 .footer__contacts {
@@ -1314,7 +1437,7 @@ fieldset label:has(:checked)::after {
 
 .footer__social-network {
   color: #323232;
-  font-size: 26px;
+  font-size: 21px;
 }
 
 .footer__adress {

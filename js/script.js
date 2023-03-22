@@ -79,7 +79,7 @@ if (iconMenu) {
   })
 }
 
-const buttons = document.querySelectorAll('.nav__item')
+const buttons = document.querySelectorAll('.header__link')
 
 buttons.forEach(button => button.addEventListener('click', closeMenuBurger))
 
@@ -289,13 +289,12 @@ footerForm.onsubmit = async () => {
 
 //scroll on click
 const menuLinks = document.querySelectorAll('.header__item[data-goto]')
+const heroBtn = document.querySelector('.hero__btn[data-goto]')
 
 if (menuLinks.length > 0) {
   menuLinks.forEach(menuLink => {
     menuLink.addEventListener('click', onMenuLinkClick)
   })
-
-  heroBtn.addEventListener('click', onMenuLinkClick)
 
 
   function onMenuLinkClick(e) {

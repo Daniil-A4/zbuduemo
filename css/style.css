@@ -7,12 +7,36 @@
   --header-height: 100px;
 }
 
+
 .bg {
   inset: 0;
   overflow: hidden;
-  position: absolute;
-  z-index: -2;
+  position: relative;
   height: 100vh;
+  z-index: 10;
+}
+
+.bg img {
+  animation: zoom 90s infinite;
+  animation-delay: 4s;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.2) translate(5%, 5%);
+  }
+
+  75% {
+    transform: scale(1.2) translate(-5%, 5%);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .bg-logo {
@@ -62,18 +86,30 @@
   object-fit: cover;
 }
 
-.bg ul {
+.bg__fall-columns {
   --color: rgba(255, 255, 255, 0.214);
   display: flex;
   position: absolute;
   inset: 0;
-  background-image: repeating-linear-gradient(to right, transparent 0 calc(var(--bar-width) - 1px), var(--color) calc(var(--bar-width) - 1px) var(--bar-width));
+  /* background-image: repeating-linear-gradient(to right, transparent 0 calc(var(--bar-width) - 1px), var(--color) calc(var(--bar-width) - 1px) var(--bar-width)); */
 }
 
-.bg li {
+.bg__fall-columns li {
   height: 100vh;
   width: var(--bar-width);
   background-color: white;
+}
+
+.bg__right-lines {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  width: 100vw;
+}
+
+.bg__right-lines li{
+  border-right: 1px solid rgba(255, 255, 255, 0.214);
+  width: var(--bar-width);
 }
 
 /* .bg li {
@@ -121,6 +157,9 @@
   align-items: center;
   justify-content: space-between;
   height: var(--header-height);
+  position: relative;
+  z-index: 11;
+  margin-top: -100vh;
 }
 
 .header-logo {
@@ -175,6 +214,10 @@
   text-transform: uppercase;
 }
 
+.header__item--social {
+  position: relative;
+}
+
 
 @media (any-hover: hover) {
 
@@ -205,9 +248,17 @@
   display: none;
 }
 
+
+.main {
+  position: relative;
+}
+
 /* ======================hero============================================================================ */
 .hero {
   height: calc(100vh - var(--header-height));
+  position: relative;
+  z-index: 10;
+  overflow-x: hidden;
 }
 
 .hero__container {
@@ -220,17 +271,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
 }
 
 .hero__offer {
   font-size: 70px;
   height: 130px;
-  margin-bottom: calc(24vh - 130px);
+  margin-bottom: calc(22vh - 130px);
   font-family: 'Helvetica';
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 110%;
+  margin-top: 11vh;
 }
 
 .hero__offer span {
@@ -313,8 +364,8 @@
 
 .hero__socials {
   position: absolute;
-  top: 25vh;
-  right: 16px;
+  top: 24vh;
+  right: calc(100vw / 6 - 65px);
 }
 
 .hero__socials li:not(:last-child) {
@@ -338,9 +389,13 @@
 /* ================about-us========================================= */
 
 .about {
-  padding: 150px 0;
+  /* padding: 150px 0; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
   color: #000;
-  background-color: #f0f0f0;
+  background-color: white;
+  overflow-x: hidden;
 }
 
 .about__container {}
@@ -437,6 +492,7 @@
   padding: 100px 0;
   background-color: #1f1f1f;
   --color-1: black;
+  overflow-x: hidden;
 }
 
 .quiz__body {
@@ -638,13 +694,13 @@ fieldset label:has(:checked)::after {
 }
 
 .button-block button {
-  width: 200px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 0;
   cursor: pointer;
-  height: 50px;
+  height: 40px;
+  padding: 0 70px;
   border: 1px solid white;
   color: #ffffff;
   font-size: 14px;
@@ -695,12 +751,11 @@ fieldset label:has(:checked)::after {
 }
 
 .quiz-send-data__title {
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 1.5px;
-  margin-bottom: 4vh;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .quiz-send-data__title span {
@@ -708,13 +763,21 @@ fieldset label:has(:checked)::after {
 }
 
 .quiz-send-data__sub-title {
-  margin-bottom: 5vh;
+  margin-bottom: 30px;
   font-size: 14px;
   font-weight: 500;
 }
 
 .quiz-send-data__form {
-  width: 500px;
+  width: 100%;
+}
+
+.quiz-send-data__form p:nth-child(1) {
+  margin-bottom: 22px;
+}
+
+.quiz-send-data__form p:nth-child(2) {
+  margin-bottom: 55px;
 }
 
 .quiz-send-data__name,
@@ -727,7 +790,8 @@ fieldset label:has(:checked)::after {
   background: none;
   border-bottom: 1px solid white;
   color: #ffffff;
-  margin-bottom: 30px;
+  background: none;
+  padding: 10px 0 10px 5px;
   /* border-radius: 7px; */
 }
 
@@ -737,12 +801,12 @@ fieldset label:has(:checked)::after {
 }
 
 .quiz-send-data__button {
-  width: 200px;
   /* margin: auto; */
   height: 40px;
+  padding: 0 70px;
   background-color: #ffffff;
   color: #000;
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   letter-spacing: 1.3px;
@@ -836,10 +900,12 @@ fieldset label:has(:checked)::after {
 
 .services {
   padding: 150px 0;
-  background-color: #f0f0f0;
+  background-color: white;
+  overflow-x: hidden;
 }
-
-.services__container {}
+.services__container {
+  
+}
 
 .services__body {
   position: relative;
@@ -904,7 +970,8 @@ fieldset label:has(:checked)::after {
   padding-top: 50px;
   /* margin-bottom: 1000px; */
   padding-bottom: 70px;
-  background-color: #f0f0f0;
+  background-color: white;
+  overflow-x: hidden;
 }
 
 .gallery__container {}
@@ -936,7 +1003,7 @@ fieldset label:has(:checked)::after {
   height: 100%;
   z-index: 2;
   transform: translate(-100%, 0);
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .gallery__columns {
@@ -1095,13 +1162,20 @@ fieldset label:has(:checked)::after {
 /* ====================send-form================================================================== */
 
 .send-form {
-  padding: 120px 0;
   background-color: #1f1f1f;
-  background: url(../image/2.jpg) center/cover no-repeat fixed;
-  position: relative;
+  background: url(../image/2.jpg) center/cover no-repeat;
+  /* position: relative; */
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: -4;
 }
 
-.send-form::after {
+.send-form__bg {
+  padding: 120px 0;
+  position: relative;
+}
+.send-form__bg::after {
   content: '';
   position: absolute;
   top: 0;
@@ -1121,6 +1195,7 @@ fieldset label:has(:checked)::after {
 
 .send-form__card {
   flex: 0 1 60%;
+  margin-left: auto;
 }
 
 .send-form__title {
@@ -1157,7 +1232,7 @@ fieldset label:has(:checked)::after {
   width: 100%;
   background: none;
   padding: 10px 0 10px 5px;
-  font-size: 18px;
+  font-size: 14px;
   border-bottom: 1px solid white;
   color: #ffffff;
 }
@@ -1242,7 +1317,13 @@ fieldset label:has(:checked)::after {
 
 .backstage {
   padding: 100px 0;
+  /* margin-bottom: 450px; */
   border-bottom: 1px solid #b2b2b2;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  overflow-x: hidden;
+
 }
 
 .backstage__container {}
@@ -1281,8 +1362,9 @@ fieldset label:has(:checked)::after {
   font-size: 14px;
   font-weight: 400;
   line-height: 110%;
-  
+
 }
+
 .backstage__text:nth-child(2) {
   margin-bottom: 80px;
   color: var(--grey-color);
@@ -1311,7 +1393,14 @@ fieldset label:has(:checked)::after {
   padding-top: 100px;
   padding-bottom: 70px;
   background-color: white;
+  /* background-color: #f7f7f7; */
   color: #323232;
+  /* position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 450px;
+  z-index: -1; */
+  overflow-x: hidden;
 }
 
 .footer__container {}
@@ -1372,10 +1461,10 @@ fieldset label:has(:checked)::after {
 }
 
 .footer__button {
-  height: 30px;
+  height: 40px;
   border: 1px solid #b2b2b2;
   color: #000;
-  padding: 0 40px;
+  padding: 0 70px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   text-transform: uppercase;

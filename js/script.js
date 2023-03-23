@@ -133,7 +133,7 @@ tl.to('.bg-logo-item', {
   },
 });
 
-tl.to('.bg li', {
+tl.to('.bg__fall-columns li', {
   y: '100%',
   duration: 0.6,
   stagger: {
@@ -255,7 +255,7 @@ callbackForm.onsubmit = async () => {
 
   const message = "ім'я: " + name + "\nномер: " + number + "\nIP: " + ip_address;
 
-  headerForm.reset()
+  callbackForm.reset()
   popupClose(headerForm.closest('.popup'))
 
 
@@ -311,6 +311,7 @@ if (menuLinks.length > 0) {
     }
   }
 }
+
 
 
 

@@ -44,7 +44,7 @@ const questions = [
     ],
   },
   {
-    title: '№3. Чи є дизайн проект ?',
+    title: '№3. Чи є дизайн-проєкт ?',
     name: 'project',
     answers: [
       { 

@@ -31,7 +31,15 @@
   <div class="wrapper">
     <div class="bg">
       <img src="./image/hero-bg02.jpg" alt="">
-      <ul>
+      <ul class="bg__fall-columns">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul class="bg__right-lines">
         <li></li>
         <li></li>
         <li></li>
@@ -53,18 +61,19 @@
         </div>
       </div>
     </div>
+
     <header class="header">
       <a class="header-logo" href="">zbuduemo<span class="header-logo-dot">&#183;</span></a>
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__link">
-            <p><a data-goto=".page__section_1" class="header__item" href="">Services</a></p>
+            <p><a data-goto=".page__section_1" class="header__item" href="">Послуги</a></p>
           </li>
           <li class="header__link">
-            <p><a data-goto=".page__section_2" class="header__item" href="">Gallery</a></p>
+            <p><a data-goto=".page__section_2" class="header__item" href="">Галерея</a></p>
           </li>
           <li class="header__link">
-            <p><a data-goto=".page__section_3" class="header__item" href="">Contacts</a></p>
+            <p><a data-goto=".page__section_3" class="header__item" href="">Контакти</a></p>
           </li>
           <li class="header__link">
             <div class="header__item">
@@ -80,7 +89,6 @@
         <span></span>
       </div>
     </header>
-
     <main class="main">
       <section class="hero">
         <div class="hero__container _container">
@@ -112,7 +120,7 @@
             <h3 class="about__title"><span>Про нас</span></h3>
             <div class="about__wrapper">
               <div class="about__row">
-                <h4 class="about__subtitle">Атмосфера команди :</h4>
+                <h4 class="about__subtitle">Атмосфера команди:</h4>
                 <p class="about__text text-grey">Ми створили практику, побудовану на сімейному бізнесі, теплоті,
                   цінностях та взаєминах між усіма учасниками процесу створення. Ми хочемо, щоб наші проєкти надихали,
                   розбурхували і вселяли відчуття нероздільності людини з природою у своєму житлі, чи це квартира, чи
@@ -124,8 +132,10 @@
                 </p>
               </div>
               <div class="about__row bm">
-                <h4 class="about__subtitle">Основні цілі компанії :</h4>
-                <p class="about__text">Під час роботи над архітектурою чи дизайном, наше завдання полягає в тому, щоб знайти суть простору, незалежно від масштабу чи розташування. Ми підтримуємо культ естетики та унікальності кожного клієнта, малюючи та створюючи простори, адаптивні під запит людини.
+                <h4 class="about__subtitle">Основні цілі компанії:</h4>
+                <p class="about__text">Під час роботи над архітектурою чи дизайном, наше завдання полягає в тому, щоб
+                  знайти суть простору, незалежно від масштабу чи розташування. Ми підтримуємо культ естетики та
+                  унікальності кожного клієнта, малюючи та створюючи простори, адаптивні під запит людини.
                 </p>
               </div>
               <div class="about__row">
@@ -178,8 +188,8 @@
                 <form class="quiz-send-data__form" action="javascript:">
                   <p><input class="quiz-send-data__name" type="text" name="name" placeholder="Ім'я" required
                       pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$"></p>
-                  <p><input class="quiz-send-data__number" type="tel" name="phone" placeholder="Ваш номер телефону*" required
-                      pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
+                  <p><input class="quiz-send-data__number" type="tel" name="phone" placeholder="Ваш номер телефону*"
+                      required pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
                   <button class="quiz-send-data__button" type="submit">Надіслати</button>
                 </form>
               </div>
@@ -195,28 +205,33 @@
         </div>
       </section>
 
-      <section class="services page__section_1">
+      <section class="services">
         <div class="services__container _container">
-          <div class="services__body">
+          <div class="services__body  page__section_1">
             <h3 class="services__title">Послуги</h3>
             <div class="services__wrapper">
               <h4 class="services__info">Ми маємо жагу до вирішення найскладніших завдань.</h4>
               <div class="services__row">
                 <div class="services__item">
                   <h4 class="services__sub-title">Архітектура</h4>
-                  <p class="services__text">розробка архітектури / конструктивні рішення  / геодезія / юридичний супровід</p>
+                  <p class="services__text">розробка архітектури / конструктивні рішення / геодезія / юридичний супровід
+                  </p>
                 </div>
                 <div class="services__item">
                   <h4 class="services__sub-title">Реконструкція </h4>
-                  <p class="services__text text-grey">Аналіз  / розробка архітектури / конструктивні рішення / технічне заключення</p>
+                  <p class="services__text text-grey">aналіз / розробка архітектури / конструктивні рішення / технічне
+                    заключення</p>
                 </div>
                 <div class="services__item">
                   <h4 class="services__sub-title">Дизайн</h4>
-                  <p class="services__text">візуалізації  / технічна документація для ремонту / комплектація зі знижкою до 20% / консультації, щодо заміни матеріалів або меблів / надання інструкції, щодо ведення ремонту</p>
+                  <p class="services__text">візуалізації / технічна документація для ремонту / комплектація зі знижкою
+                    до 20% / консультації, щодо заміни матеріалів або меблів / надання інструкції, щодо ведення ремонту
+                  </p>
                 </div>
                 <div class="services__item">
                   <h4 class="services__sub-title">Ремонт</h4>
-                  <p class="services__text">реалізація дизайн-проекту / замовлення та доставка матеріалів на об'єкт / повна комплектація проєкту / постійна підтримка зв'язку з клієнтом / звітність закупівель</p>
+                  <p class="services__text">реалізація дизайн-проєкту / замовлення та доставка матеріалів на об'єкт /
+                    повна комплектація проєкту / постійна підтримка зв'язку з клієнтом / звітність закупівель</p>
                 </div>
               </div>
             </div>
@@ -224,9 +239,9 @@
         </div>
       </section>
 
-      <section class="gallery page__section_2">
+      <section class="gallery">
         <div class="gallery__container _container">
-          <div class="gallery__body">
+          <div class="gallery__body page__section_2">
             <h3 class="gallery__title">Проєкти</h3>
             <!-- <div class="scrollbar"></div> -->
             <div class="gallery-swiper swiper-container">
@@ -615,7 +630,8 @@
                           <li class="gallery__img-item">Призначення: житловий будинок</li>
                           <li class="gallery__img-item">Площа: 200м2</li>
                         </ul>
-                        <p class="gallery__img-info">Житловий будинок в хай-тек стилі,, з плоским односхилим дахом. Будинок включає відкриту терасу і гараж.
+                        <p class="gallery__img-info">Житловий будинок в хай-тек стилі,, з плоским односхилим дахом.
+                          Будинок включає відкриту терасу і гараж.
                         </p>
                       </div>
                     </a>
@@ -658,50 +674,57 @@
               <div class="scrollbar swiper-scrollbar"></div>
 
               <!-- <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div> -->
+                <div class="swiper-button-prev"></div> -->
             </div>
           </div>
         </div>
       </section>
 
       <section class="send-form">
-        <div class="send-form__container _container">
-          <div class="send-form__body">
-            <div data-aos="fade-right" class="send-form__img">
-              <!-- <img src="./image/gallery/g3/3.jpg" alt=""> -->
-            </div>
-            <div data-aos="fade-left" class="send-form__card">
-              <h3 class="send-form__title"><span>Готові</span> обговорити з нами проєкт?</h3>
-              <p class="send-form__sub-title">Залишіть заявку і ми з вами зв'яжемось</p>
-              <form class="send-form__form" action="javascript:">
-                <p>
-                  <input class="send-form__name" type="text" name="name" placeholder="Ім'я" required
-                    pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$">
-                </p>
-                <p>
-                  <input class="send-form__number" type="tel" name="number" placeholder="Ваш номер телефону*" required
-                    pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}">
-                </p>
-                <p>
-                  <button class="send-form__button">Надіслати</button>
-                </p>
-              </form>
+        <div class="send-form__bg">
+          <div class="send-form__container _container">
+            <div class="send-form__body">
+              <div class="send-form__card">
+                <h3 class="send-form__title"><span>Готові</span> обговорити з нами проєкт?</h3>
+                <p class="send-form__sub-title">Залишіть заявку і ми з вами зв'яжемось</p>
+                <form class="send-form__form" action="javascript:">
+                  <p>
+                    <input class="send-form__name" type="text" name="name" placeholder="Ім'я" required
+                      pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$">
+                  </p>
+                  <p>
+                    <input class="send-form__number" type="tel" name="number" placeholder="Ваш номер телефону*" required
+                      pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}">
+                  </p>
+                  <p>
+                    <button class="send-form__button">Надіслати</button>
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
+      <!-- data-aos="fade-left" -->
       <section class="backstage">
         <div class="backstage__container _container">
           <div class="backstage__body">
             <h3 class="backstage__title">Бекстейдж</h3>
             <div class="backstage__wrapper">
-              <div class="backstage__subtitle">Добрі справи не залишаються непоміченими, вони як маяки - світять тим, хто чекає допомоги.
+              <div class="backstage__subtitle">Добрі справи не залишаються непоміченими, вони як маяки - світять тим,
+                хто чекає допомоги.
               </div>
               <div class="backstage__item">
-                <p class="backstage__text">У цей нелегкий для України час весь світ єднається у відчайдушній боротьбі. Небайдужі громадяни роблять все, щоб забезпечити населення усім необхідним та допомогти тим, хто цього потребує. 
+                <p class="backstage__text">У цей нелегкий для України час весь світ єднається у відчайдушній боротьбі.
+                  Небайдужі громадяни роблять все, щоб забезпечити населення усім необхідним та допомогти тим, хто цього
+                  потребує.
                 </p>
-                <p class="backstage__text">З перших днів війни ми почали волонтерити, трохи пізніше змогли долучитися до товариства Червоного Хреста України. Дякуємо фонду Благо Лайф за можливість допомагати і бути корисними. Взимку ми зробили більше 70 буржуйок для прикордонної служби, аеророзвідки, піхоти. Ми відправляли буржуйки в Бахмут, Миколаїв, Херсон. Більше 820 воєнних, наших хлопців, були в теплі в цей складний період морозів. Своїми руками створили тепло і можливість для швидкого приготування їжі. Допомогати і підтримувати ЗСУ, це спосіб приблизити Перемогу. Слава ЗСУ, Cлава нації.
+                <p class="backstage__text">З перших днів війни ми почали волонтерити, трохи пізніше змогли долучитися до
+                  товариства Червоного Хреста України. Дякуємо фонду Благо Лайф за можливість допомагати і бути
+                  корисними. Взимку ми зробили більше 70 буржуйок для прикордонної служби, аеророзвідки, піхоти. Ми
+                  відправляли буржуйки в Бахмут, Миколаїв, Херсон. Більше 820 воєнних, наших хлопців, були в теплі в цей
+                  складний період морозів. Своїми руками створили тепло і можливість для швидкого приготування їжі.
+                  Допомогати і підтримувати ЗСУ, це спосіб приблизити Перемогу. Слава ЗСУ, Cлава нації.
                 </p>
                 <div class="backstage__project">
                   <a class="backstage__image icon-arrow_right_icon-2" data-fancybox="backstage-1"

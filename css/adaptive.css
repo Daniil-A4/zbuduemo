@@ -70,9 +70,10 @@
     background-color: #000000;
   }
 
-  /* .hero__sub-text {
-    width: 60vw;
-  } */
+  .hero__socials {
+    top: 14vh;
+    right: 30px;
+}
   /* ============services==================== */
   .services__sub-title {
     flex: 0 1 35%;
@@ -140,18 +141,13 @@
 
 @media (max-width: 767px) {
 
-  .about {
-    padding: 100px 0;
-  }
-
   .services {
     padding: 100px 0;
   }
 
   .hero__socials {
     position: absolute;
-    top: 3vh;
-    right: 16px;
+    top: 5vh;
   }
 
   .services__info {
@@ -229,6 +225,15 @@
 
 
 @media (max-width: 479px) {
+
+  .about {
+    height: unset;
+  }
+
+  .about__body {
+    padding: 70px 0;
+  }
+
   .hero__offer {
     font-size: 60px;
     margin-top: 80px;
@@ -269,12 +274,21 @@
   .hero__offer {
     font-size: 50px;
     height: 99px;
-    margin-bottom: calc(30vh - 99px);
+    margin-bottom: calc(19vh - 44px);
+    margin-top: calc(11vh - 45px);
   }
 
   .hero__sub-text {
     font-size: 18px;
     height: 50px;
-    margin-bottom: calc(27vh - 50px);
+    margin-bottom: calc(23vh - 50px);
+  }
+
+  .about {
+    height: unset;
+  }
+
+  .about__body {
+    padding: 70px 0;
   }
 }

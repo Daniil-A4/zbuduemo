@@ -1,8 +1,8 @@
-@media (min-width: 1719px) {
+/* @media (min-width: 1719px) {
   .hero__line-wrapper {
     width: 90%;
   }
-}
+} */
 @media (max-width: 1150px) {
    /* ===========backstage============= */
    .backstage__wrapper {
@@ -73,6 +73,18 @@
   .hero__socials {
     top: 14vh;
     right: 30px;
+}
+/* ============hero========================== */
+.hero__offer {
+  position: unset;
+}
+
+.hero__sub-text {
+  position: unset;
+}
+
+.hero__line-wrapper {
+  position: unset;
 }
   /* ============services==================== */
   .services__sub-title {

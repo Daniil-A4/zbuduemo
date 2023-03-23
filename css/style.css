@@ -107,7 +107,7 @@
   width: 100vw;
 }
 
-.bg__right-lines li{
+.bg__right-lines li {
   border-right: 1px solid rgba(255, 255, 255, 0.214);
   width: var(--bar-width);
 }
@@ -282,6 +282,10 @@
   letter-spacing: 1px;
   line-height: 110%;
   margin-top: 11vh;
+
+  position: absolute;
+  top: 15vh;
+  left: calc(100vw / 6 + 10px);
 }
 
 .hero__offer span {
@@ -297,6 +301,10 @@
   font-weight: 100;
   letter-spacing: 1px;
   line-height: 150%;
+
+  position: absolute;
+  top: 46vh;
+  left: calc(100vw / 6 + 10px);
 }
 
 .hero__line-wrapper {
@@ -305,6 +313,9 @@
   height: 42px;
   width: 67vw;
 
+  position: absolute;
+  top: 68vh;
+  left: calc(100vw / 6);
 
 }
 
@@ -364,7 +375,7 @@
 
 .hero__socials {
   position: absolute;
-  top: 24vh;
+  top: 27vh;
   right: calc(100vw / 6 - 65px);
 }
 
@@ -903,9 +914,8 @@ fieldset label:has(:checked)::after {
   background-color: white;
   overflow-x: hidden;
 }
-.services__container {
-  
-}
+
+.services__container {}
 
 .services__body {
   position: relative;
@@ -1047,6 +1057,10 @@ fieldset label:has(:checked)::after {
   filter: brightness(0.7);
 }
 
+.gallery__image-more-dark img {
+  filter: brightness(0.4);
+}
+
 
 .hide {
   display: none;
@@ -1175,6 +1189,7 @@ fieldset label:has(:checked)::after {
   padding: 120px 0;
   position: relative;
 }
+
 .send-form__bg::after {
   content: '';
   position: absolute;

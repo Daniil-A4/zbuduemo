@@ -274,7 +274,7 @@ footerForm.onsubmit = async () => {
 
   const message = "ім'я: " + name + "\nномер: " + number + "\nIP: " + ip_address;
 
-  headerForm.reset()
+  footerForm.reset()
   popupClose(headerForm.closest('.popup'))
 
 

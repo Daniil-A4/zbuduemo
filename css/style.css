@@ -407,6 +407,8 @@
   color: #000;
   background-color: white;
   overflow-x: hidden;
+  position: relative;
+  z-index: 10;
 }
 
 .about__container {}
@@ -504,6 +506,8 @@
   background-color: #1f1f1f;
   --color-1: black;
   overflow-x: hidden;
+  position: relative;
+  z-index: 10;
 }
 
 .quiz__body {
@@ -913,6 +917,8 @@ fieldset label:has(:checked)::after {
   padding: 150px 0;
   background-color: white;
   overflow-x: hidden;
+  position: relative;
+  z-index: 10;
 }
 
 .services__container {}
@@ -982,6 +988,8 @@ fieldset label:has(:checked)::after {
   padding-bottom: 70px;
   background-color: white;
   overflow-x: hidden;
+  position: relative;
+  z-index: 10;
 }
 
 .gallery__container {}
@@ -1040,14 +1048,14 @@ fieldset label:has(:checked)::after {
   margin: 0 0 30px;
 }
 
-.gallery__image .icon-arrow_right_icon {
+/* .gallery__image .icon-arrow_right_icon {
   position: absolute;
   bottom: 20px;
   right: 20px;
   font-size: 40px;
   z-index: 20;
-  color: #ffffff;
-}
+  color: #d50000;
+} */
 
 
 .gallery__image img {
@@ -1182,15 +1190,16 @@ fieldset label:has(:checked)::after {
   position: sticky;
   top: 0;
   bottom: 0;
-  z-index: -4;
+  /* z-index: -1; */
 }
 
 .send-form__bg {
   padding: 120px 0;
   position: relative;
+  z-index: 2;
 }
 
-.send-form__bg::after {
+.send-form__bg::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1233,6 +1242,7 @@ fieldset label:has(:checked)::after {
 
 .send-form__form p {
   width: 100%;
+  cursor: pointer;
 }
 
 .send-form__form p:nth-child(1) {
@@ -1388,8 +1398,24 @@ fieldset label:has(:checked)::after {
 .backstage__project {}
 
 .backstage__image {
+  display: block;
   position: relative;
   width: 100%;
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+
+.icon-arrow_right_3:after {
+  content: "\e905";
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  /* left: 88vw;
+  bottom: 1vh; */
+  font-size: 50px;
+  color: var(--red-color);
+  color: white;
+  z-index: 2;
 }
 
 .backstage__image img {

@@ -35,7 +35,7 @@
   right: 5%;
   font-size: 40px;
   z-index: 20;
-  color: #ffffff;
+  color: white;
 }
 .icon-facebook_icon:before {
   content: "\e900";
@@ -58,6 +58,8 @@
 .icon-viber_icon:before {
   content: "\e907";
 }
+
+
 
 
 

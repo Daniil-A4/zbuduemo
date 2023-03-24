@@ -31,7 +31,15 @@
   <div class="wrapper">
     <div class="bg">
       <img src="./image/hero-bg02.jpg" alt="">
-      <ul>
+      <ul class="bg__fall-columns">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul class="bg__right-lines">
         <li></li>
         <li></li>
         <li></li>
@@ -53,6 +61,7 @@
         </div>
       </div>
     </div>
+
     <header class="header">
       <a class="header-logo" href="">zbuduemo<span class="header-logo-dot">&#183;</span></a>
       <nav class="header__nav">
@@ -80,14 +89,13 @@
         <span></span>
       </div>
     </header>
-
+    
     <main class="main">
       <section class="hero">
         <div class="hero__container _container">
           <div class="hero__body">
             <div class="hero__offer"><span>Design &</span> <br>Architecture</div>
-            <p class="hero__sub-text">Місце, де стриманість обганяє багатство,<br> де простота несе ідею, де є
-              порядок і складність.</p>
+            <p class="hero__sub-text">A place where restraint overtakes wealth, where simplicity carries an idea,<br> where there is order and complexity.</p>
             <div class="hero__line-wrapper">
               <div class="hero__line">
                 <a href="#popup-header" class="hero__line-button popup-link">
@@ -109,23 +117,16 @@
       <section class="about">
         <div class="about__container _container">
           <div class="about__body">
-            <h3 class="about__title"><span>Про нас</span></h3>
+            <h3 class="about__title"><span>About us</span></h3>
             <div class="about__wrapper">
               <div class="about__row">
-                <h4 class="about__subtitle">Атмосфера команди :</h4>
-                <p class="about__text text-grey">Ми створили практику, побудовану на сімейному бізнесі, теплоті,
-                  цінностях та взаєминах між усіма учасниками процесу створення. Ми хочемо, щоб наші проєкти надихали,
-                  розбурхували і вселяли відчуття нероздільності людини з природою у своєму житлі, чи це квартира, чи
-                  будинок.
-                  Ми про такі проєкти, які проживуть довго, розпочнуть новий етап життя своїх господарів, і про такі,
-                  які змусять по-новому відчути світ дизайну та архітектури у теплих обіймах нашої команди.
-                  Наш досвід за підсумком визначає момент, коли нема чого прибрати або додати. Краса та функціональність
-                  пересуваються разом, як невід'ємна частина нашої роботи.
+                <h4 class="about__subtitle">Team atmosphere:</h4>
+                <p class="about__text text-grey">We have created a practice based on family business, warmth, values, and relationships between all participants in the creation process. We want our projects to inspire, excite, and instill a sense of the inseparability of humans with nature in their homes, whether it's an apartment or a house. We are talking about projects that will live for a long time, start a new stage of their owners' lives, and those that will make you feel the world of design and architecture in a new way in the warm embrace of our team. Our experience ultimately defines the moment when there is nothing to remove or add. Beauty and functionality move together as an integral part of our work.
                 </p>
               </div>
               <div class="about__row bm">
-                <h4 class="about__subtitle">Основні цілі компанії :</h4>
-                <p class="about__text">Під час роботи над архітектурою чи дизайном, наше завдання полягає в тому, щоб знайти суть простору, незалежно від масштабу чи розташування. Ми підтримуємо культ естетики та унікальності кожного клієнта, малюючи та створюючи простори, адаптивні під запит людини.
+                <h4 class="about__subtitle">The main goals of the company:</h4>
+                <p class="about__text">When working on architecture or design, our task is to find the essence of a space, regardless of scale or location. We support the cult of aesthetics and uniqueness of each client, drawing and creating spaces that are adaptive to human needs.
                 </p>
               </div>
               <div class="about__row">
@@ -133,27 +134,27 @@
                 <div class="about__achiv">
                   <div class="about__item-achiv">
                     <p class="about__digit">9</p>
-                    <p class="about__description-digit">років досвіду роботи</p>
+                    <p class="about__description-digit">years of work experience</p>
                   </div>
                   <div class="about__item-achiv">
                     <p class="about__digit">271</p>
-                    <p class="about__description-digit">дизайн-проєктів</p>
+                    <p class="about__description-digit">design projects</p>
                   </div>
                   <div class="about__item-achiv">
                     <p class="about__digit">457</p>
-                    <p class="about__description-digit">виконаних ремонтів</p>
+                    <p class="about__description-digit">of repairs performed</p>
                   </div>
                   <div class="about__item-achiv">
                     <p class="about__digit">28</p>
-                    <p class="about__description-digit">побудованих будинків</p>
+                    <p class="about__description-digit">of houses built</p>
                   </div>
                   <div class="about__item-achiv">
                     <p class="about__digit">62</p>
-                    <p class="about__description-digit">кваліфікованих спеціалістів</p>
+                    <p class="about__description-digit">qualified specialists</p>
                   </div>
                   <div class="about__item-achiv">
                     <p class="about__digit">75%</p>
-                    <p class="about__description-digit">клієнтів замовляють повний комплекс</p>
+                    <p class="about__description-digit">of customers order a full range of</p>
                   </div>
                 </div>
               </div>
@@ -166,57 +167,59 @@
         <div class="quiz__container _container">
           <div class="quiz__body">
             <div class="quiz__title">
-              <h3>Розрахунок</h3>
+              <h3>CALCULATION</h3>
             </div>
             <!-- data-aos="fade-up" data-aos-anchor-placement="center-bottom" -->
             <div class="quiz-wrapper">
             </div>
             <div class="quiz-send-data" hidden>
               <div class="quiz-send-data__item">
-                <h4 class="quiz-send-data__title"><span>Дякуємо</span> за відповіді!</h4>
-                <h5 class="quiz-send-data__sub-title"> Для точного розрахунку залиште свої контактні данні</h5>
+                <h4 class="quiz-send-data__title"><span>THANK YOU</span> FOR YOUR ANSWERS!</h4> 
+                <h5 class="quiz-send-data__sub-title"> For an accurate calculation, please leave your contact information</h5>
                 <form class="quiz-send-data__form" action="javascript:">
-                  <p><input class="quiz-send-data__name" type="text" name="name" placeholder="Ім'я" required
+                  <p><input class="quiz-send-data__name" type="text" name="name" placeholder="Name" required
                       pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$"></p>
-                  <p><input class="quiz-send-data__number" type="tel" name="phone" placeholder="Ваш номер телефону*" required
-                      pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
-                  <button class="quiz-send-data__button" type="submit">Надіслати</button>
+                  <p><input class="quiz-send-data__number" type="tel" name="phone" placeholder="Your phone number*"
+                      required pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}"></p>
+                  <button class="quiz-send-data__button" type="submit">Send</button>
                 </form>
               </div>
             </div>
 
             <div class="quiz__thanks thanks" hidden>
               <div class="thanks__wrapper">
-                <p class="thanks__top-text">Дякуємо, ваша заявка прийнята</p>
-                <p class="thanks__bottom-text">ми зв’яжемось з вами найближчим часом</p>
+                <p class="thanks__top-text">Thank you, your application has been accepted</p>
+                <p class="thanks__bottom-text">we will contact you as soon as possible</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="services page__section_1">
+      <section class="services">
         <div class="services__container _container">
-          <div class="services__body">
-            <h3 class="services__title">Послуги</h3>
+          <div class="services__body  page__section_1">
+            <h3 class="services__title">Services</h3>
             <div class="services__wrapper">
-              <h4 class="services__info">Ми маємо жагу до вирішення найскладніших завдань.</h4>
+              <h4 class="services__info">We have a thirst for solving the most complex problems.</h4>
               <div class="services__row">
                 <div class="services__item">
-                  <h4 class="services__sub-title">Архітектура</h4>
-                  <p class="services__text">розробка архітектури / конструктивні рішення  / геодезія / юридичний супровід</p>
+                  <h4 class="services__sub-title">Architecture</h4>
+                  <p class="services__text">architecture development / design solutions / geodesy / legal support
+                  </p>
                 </div>
                 <div class="services__item">
-                  <h4 class="services__sub-title">Реконструкція </h4>
-                  <p class="services__text text-grey">Аналіз  / розробка архітектури / конструктивні рішення / технічне заключення</p>
+                  <h4 class="services__sub-title">Reconstruction </h4>
+                  <p class="services__text text-grey">analysis / architecture development / design solutions / technical report</p>
                 </div>
                 <div class="services__item">
-                  <h4 class="services__sub-title">Дизайн</h4>
-                  <p class="services__text">візуалізації  / технічна документація для ремонту / комплектація зі знижкою до 20% / консультації, щодо заміни матеріалів або меблів / надання інструкції, щодо ведення ремонту</p>
+                  <h4 class="services__sub-title">Design</h4>
+                  <p class="services__text">visualization / technical documentation for repairs / equipment with a discount of up to 20% / consultations on the replacement of materials or furniture / providing instructions on how to carry out repairs
+                  </p>
                 </div>
                 <div class="services__item">
-                  <h4 class="services__sub-title">Ремонт</h4>
-                  <p class="services__text">реалізація дизайн-проекту / замовлення та доставка матеріалів на об'єкт / повна комплектація проєкту / постійна підтримка зв'язку з клієнтом / звітність закупівель</p>
+                  <h4 class="services__sub-title">Repair</h4>
+                  <p class="services__text">implementation of a design project / ordering and delivery of materials to the site / complete project completion / constant communication with the client / procurement reporting</p>
                 </div>
               </div>
             </div>
@@ -224,10 +227,10 @@
         </div>
       </section>
 
-      <section class="gallery page__section_2">
+      <section class="gallery">
         <div class="gallery__container _container">
-          <div class="gallery__body">
-            <h3 class="gallery__title">Проєкти</h3>
+          <div class="gallery__body page__section_2">
+            <h3 class="gallery__title">Projects</h3>
             <!-- <div class="scrollbar"></div> -->
             <div class="gallery-swiper swiper-container">
               <div class="slider__arrows">
@@ -237,19 +240,19 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="gallery__project">
-                    <a class="gallery__image  icon-arrow_right_icon-2" data-fancybox="project-7"
+                    <a class="gallery__image gallery__image-more-dark icon-arrow_right_icon-2" data-fancybox="project-7"
                       href="./image/gallery/g7/1.jpg"><!--Ссылка на главную фото-->
                       <img alt="" src="./image/gallery/g7/1.jpg" style="display: block;">
                       <div class="gallery__img-subtitle">
                         <span class="gallery__img-date">09/2022</span>
                         <h5 class="gallery__img-name">MKD002</h5>
                         <ul class="gallery__img-list">
-                          <li class="gallery__img-item">Розміщення: с. Іванковичі</li>
-                          <li class="gallery__img-item">Клієнт: приватне замовлення</li>
-                          <li class="gallery__img-item">Призначення: будинок для гостей, будинок для охорони</li>
-                          <li class="gallery__img-item">Площа: 200м2</li>
+                          <li class="gallery__img-item">Location: Ivankovychi village</li>
+                          <li class="gallery__img-item">Client: private order</li>
+                          <li class="gallery__img-item">Assignment: guest house, security house</li>
+                          <li class="gallery__img-item">Area: 200m2</li>
                         </ul>
-                        <p class="gallery__img-info">Резиденція для сім'ї заміського типу.
+                        <p class="gallery__img-info">A residence for a family of a country type.
                         </p>
                       </div>
                     </a>
@@ -309,19 +312,19 @@
 
                 <div class="swiper-slide">
                   <div class="gallery__project">
-                    <a class="gallery__image  icon-arrow_right_icon-2" data-fancybox="project-8"
+                    <a class="gallery__image gallery__image-more-dark icon-arrow_right_icon-2" data-fancybox="project-8"
                       href="./image/gallery/g8/1_2.jpg"><!--Ссылка на главную фото-->
                       <img alt="" src="./image/gallery/g8/1_2.jpg" style="display: block;">
                       <div class="gallery__img-subtitle">
                         <span class="gallery__img-date">09/2021-2022</span>
                         <h5 class="gallery__img-name">HIF016</h5>
                         <ul class="gallery__img-list">
-                          <li class="gallery__img-item">Розміщення: с. Іванковичі</li>
-                          <li class="gallery__img-item">Клієнт: приватне замовлення</li>
-                          <li class="gallery__img-item">Призначення: вілла для власників</li>
-                          <li class="gallery__img-item">Площа: 1600м2</li>
+                          <li class="gallery__img-item">Location: Ivankovychi village</li>
+                          <li class="gallery__img-item">Client: private order</li>
+                          <li class="gallery__img-item">Assignment: villa for owners</li>
+                          <li class="gallery__img-item">Area: 1600m2</li>
                         </ul>
-                        <p class="gallery__img-info">Резиденція для сім'ї заміського типу.
+                        <p class="gallery__img-info">A residence for a family of a country type.
                         </p>
                       </div>
                     </a>
@@ -361,12 +364,12 @@
                         <span class="gallery__img-date">10/2021</span>
                         <h5 class="gallery__img-name">YAR108</h5>
                         <ul class="gallery__img-list">
-                          <li class="gallery__img-item">Розміщення: Київ</li>
-                          <li class="gallery__img-item">Клієнт: молода сім'я</li>
-                          <li class="gallery__img-item">Призначення: особисті апартаменти</li>
-                          <li class="gallery__img-item">Площа: 108м2</li>
+                          <li class="gallery__img-item">Location: Kyiv</li>
+                          <li class="gallery__img-item">Client: young family</li>
+                          <li class="gallery__img-item">Assignment: private apartments</li>
+                          <li class="gallery__img-item">Area: 108м2</li>
                         </ul>
-                        <p class="gallery__img-info">Метал та камінь у міській квартирі, де природа вписана в мегаполіс.
+                        <p class="gallery__img-info">Metal and stone in a city apartment where nature is inscribed in the metropolis.
                         </p>
                       </div>
                     </a>
@@ -412,46 +415,46 @@
                         <span class="gallery__img-date">02/2022</span>
                         <h5 class="gallery__img-name">BUR075</h5>
                         <ul class="gallery__img-list">
-                          <li class="gallery__img-item">Розміщення: Київ</li>
-                          <li class="gallery__img-item">Клієнт: приватний</li>
-                          <li class="gallery__img-item">Призначення: особисті апартаменти</li>
-                          <li class="gallery__img-item">Площа: 75м2</li>
+                          <li class="gallery__img-item">Location: Kyiv</li>
+                          <li class="gallery__img-item">Client: private</li>
+                          <li class="gallery__img-item">Assignment: private apartments</li>
+                          <li class="gallery__img-item">Area: 75m2</li>
                         </ul>
-                        <p class="gallery__img-info">Житловий простір з відсутністю громіздкого зберігання.</p>
+                        <p class="gallery__img-info">Living space with no bulky storage.</p>
                       </div>
                     </a>
                     <a data-fancybox="project-2" href="./image/gallery/g2/2.jpeg" class="gallery__image hide"><img
                         src="./image/gallery/g2/2.jpeg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/3.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/3.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/3.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/3.jpg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/4.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/4.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/4.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/4.jpg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/5.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/5.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/5.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/5.jpg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/6.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/6.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/6.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/6.jpg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/7.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/7.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/7.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/7.jpg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/8.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/8.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/8.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/8.jpg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/9.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/9.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/9.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/9.jpg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/10.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/10.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/10.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/10.jpg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/11.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/11.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/11.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/11.jpg">
                     </a>
-                    <a data-fancybox="project-2" href="./image/gallery/g2/12.JPG" class="gallery__image hide"><img
-                        src="./image/gallery/g2/12.JPG">
+                    <a data-fancybox="project-2" href="./image/gallery/g2/12.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g2/12.jpg">
                     </a>
                   </div>
                 </div>
@@ -465,12 +468,12 @@
                         <span class="gallery__img-date">04/2021</span>
                         <h5 class="gallery__img-name">KZV065</h5>
                         <ul class="gallery__img-list">
-                          <li class="gallery__img-item">Розміщення: Конча-Заспа</li>
-                          <li class="gallery__img-item">Клієнт: приватне замовлення</li>
-                          <li class="gallery__img-item">Призначення: житловий будинок</li>
-                          <li class="gallery__img-item">Площа: 650м2</li>
+                          <li class="gallery__img-item">Location: Koncha-Zaspa</li>
+                          <li class="gallery__img-item">Client: private order</li>
+                          <li class="gallery__img-item">Assignment: residential building</li>
+                          <li class="gallery__img-item">Area: 650m2</li>
                         </ul>
-                        <p class="gallery__img-info">Заміський будинок у кооперативі закритого типу із басейном.
+                        <p class="gallery__img-info">Country house in a gated community with a swimming pool.
                         </p>
                       </div>
                     </a>
@@ -510,36 +513,36 @@
                 <div class="swiper-slide">
                   <div class="gallery__project">
                     <a class="gallery__image icon-arrow_right_icon-2" data-fancybox="project-1"
-                      href="./image/gallery/g1/1.jpg"><!--Ссылка на главную фото-->
-                      <img alt="" src="./image/gallery/g1/1.jpg" style="display: block;">
+                      href="./image/gallery/g1/01.jpg"><!--Ссылка на главную фото-->
+                      <img alt="" src="./image/gallery/g1/01.jpg" style="display: block;">
                       <div class="gallery__img-subtitle">
                         <span class="gallery__img-date">07/2022</span>
                         <h5 class="gallery__img-name">ZLB293</h5>
                         <ul class="gallery__img-list">
-                          <li class="gallery__img-item">Розміщення: приховано</li>
-                          <li class="gallery__img-item">Клієнт: приватний</li>
-                          <li class="gallery__img-item">Призначення: приховано</li>
-                          <li class="gallery__img-item">Площа: 400м2</li>
+                          <li class="gallery__img-item">Location: hidden</li>
+                          <li class="gallery__img-item">Client: private</li>
+                          <li class="gallery__img-item">Assignment: hidden</li>
+                          <li class="gallery__img-item">Area: 400m2</li>
                         </ul>
-                        <p class="gallery__img-info">Металевий каркас із утепленим теном.</p>
+                        <p class="gallery__img-info">Metal frame with insulated shade.</p>
                       </div>
                     </a>
-                    <a data-fancybox="project-1" href="./image/gallery/g1/2.jpg" class="gallery__image hide"><img
-                        src="./image/gallery/g1/2.jpg"></a>
-                    <a data-fancybox="project-1" href="./image/gallery/g1/3.jpg" class="gallery__image hide"><img
-                        src="./image/gallery/g1/3.jpg"></a>
-                    <a data-fancybox="project-1" href="./image/gallery/g1/4.jpg" class="gallery__image hide"><img
-                        src="./image/gallery/g1/4.jpg"></a>
-                    <a data-fancybox="project-1" href="./image/gallery/g1/5.jpg" class="gallery__image hide"><img
-                        src="./image/gallery/g1/5.jpg"></a>
-                    <a data-fancybox="project-1" href="./image/gallery/g1/6.jpg" class="gallery__image hide"><img
-                        src="./image/gallery/g1/6.jpg"></a>
-                    <a data-fancybox="project-1" href="./image/gallery/g1/7.jpg" class="gallery__image hide"><img
-                        src="./image/gallery/g1/7.jpg"></a>
-                    <a data-fancybox="project-1" href="./image/gallery/g1/8.jpg" class="gallery__image hide"><img
-                        src="./image/gallery/g1/8.jpg"></a>
-                    <a data-fancybox="project-1" href="./image/gallery/g1/9.jpg" class="gallery__image hide"><img
-                        src="./image/gallery/g1/9.jpg"></a>
+                    <a data-fancybox="project-1" href="./image/gallery/g1/02.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g1/02.jpg"></a>
+                    <a data-fancybox="project-1" href="./image/gallery/g1/03.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g1/03.jpg"></a>
+                    <a data-fancybox="project-1" href="./image/gallery/g1/04.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g1/04.jpg"></a>
+                    <a data-fancybox="project-1" href="./image/gallery/g1/05.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g1/05.jpg"></a>
+                    <a data-fancybox="project-1" href="./image/gallery/g1/06.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g1/06.jpg"></a>
+                    <a data-fancybox="project-1" href="./image/gallery/g1/07.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g1/07.jpg"></a>
+                    <a data-fancybox="project-1" href="./image/gallery/g1/08.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g1/08.jpg"></a>
+                    <a data-fancybox="project-1" href="./image/gallery/g1/09.jpg" class="gallery__image hide"><img
+                        src="./image/gallery/g1/09.jpg"></a>
                   </div>
                 </div>
 
@@ -552,13 +555,12 @@
                         <span class="gallery__img-date">03/2021</span>
                         <h5 class="gallery__img-name">MAL110</h5>
                         <ul class="gallery__img-list">
-                          <li class="gallery__img-item">Розміщення: Котеджне селище, Крюківщина</li>
-                          <li class="gallery__img-item">Клієнт: молода сім'я</li>
-                          <li class="gallery__img-item">Призначення: житловий будинок</li>
-                          <li class="gallery__img-item">Площа: 110м2</li>
+                          <li class="gallery__img-item">Location: Cottage village, Kriukivshchyna</li>
+                          <li class="gallery__img-item">Client: young family</li>
+                          <li class="gallery__img-item">Assignment: residential building</li>
+                          <li class="gallery__img-item">Area: 110m2</li>
                         </ul>
-                        <p class="gallery__img-info">Двоповерховий дуплекс в мінімалістичному стилі з етнічними мотивами
-                          у природній палітрі кольорів.
+                        <p class="gallery__img-info">Two-storey duplex in minimalist style with ethnic motifs in a natural color palette.
                         </p>
                       </div>
                     </a>
@@ -610,12 +612,12 @@
                         <span class="gallery__img-date">03/2021</span>
                         <h5 class="gallery__img-name">GOR002</h5>
                         <ul class="gallery__img-list">
-                          <li class="gallery__img-item">Розміщення: с.Гора, Київська область</li>
-                          <li class="gallery__img-item">Клієнт: приватне замовлення</li>
-                          <li class="gallery__img-item">Призначення: житловий будинок</li>
-                          <li class="gallery__img-item">Площа: 200м2</li>
+                          <li class="gallery__img-item">Location: Hora village, Kyiv region</li>
+                          <li class="gallery__img-item">Client: private order</li>
+                          <li class="gallery__img-item">Assignment: residential building</li>
+                          <li class="gallery__img-item">Area: 200m2</li>
                         </ul>
-                        <p class="gallery__img-info">Житловий будинок в хай-тек стилі,, з плоским односхилим дахом. Будинок включає відкриту терасу і гараж.
+                        <p class="gallery__img-info">Residential building in high-tech style with a flat pitched roof. The house includes an open terrace and a garage.
                         </p>
                       </div>
                     </a>
@@ -658,69 +660,66 @@
               <div class="scrollbar swiper-scrollbar"></div>
 
               <!-- <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div> -->
+                <div class="swiper-button-prev"></div> -->
             </div>
           </div>
         </div>
       </section>
 
       <section class="send-form">
-        <div class="send-form__container _container">
-          <div class="send-form__body">
-            <div data-aos="fade-right" class="send-form__img">
-              <!-- <img src="./image/gallery/g3/3.jpg" alt=""> -->
-            </div>
-            <div data-aos="fade-left" class="send-form__card">
-              <h3 class="send-form__title"><span>Готові</span> обговорити з нами проєкт?</h3>
-              <p class="send-form__sub-title">Залишіть заявку і ми з вами зв'яжемось</p>
-              <form class="send-form__form" action="javascript:">
-                <p>
-                  <input class="send-form__name" type="text" name="name" placeholder="Ім'я" required
-                    pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$">
-                </p>
-                <p>
-                  <input class="send-form__number" type="tel" name="number" placeholder="Ваш номер телефону*" required
-                    pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}">
-                </p>
-                <p>
-                  <button class="send-form__button">Надіслати</button>
-                </p>
-              </form>
+        <div class="send-form__bg">
+          <div class="send-form__container _container">
+            <div class="send-form__body">
+              <div class="send-form__card">
+                <h3 class="send-form__title"><span>READY</span> TO DISCUSS A PROJECT WITH US?</h3>
+                <p class="send-form__sub-title">Leave a request and we will contact you</p>
+                <form class="send-form__form" action="javascript:">
+                  <p>
+                    <input class="send-form__name" type="text" name="name" placeholder="Name" required
+                      pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$">
+                  </p>
+                  <p>
+                    <input class="send-form__number" type="tel" name="number" placeholder="Your phone number*" required
+                      pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}">
+                  </p>
+                  <p>
+                    <button class="send-form__button">Send</button>
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
+      <!-- data-aos="fade-left" -->
       <section class="backstage">
         <div class="backstage__container _container">
           <div class="backstage__body">
-            <h3 class="backstage__title">Бекстейдж</h3>
+            <h3 class="backstage__title">Backstage</h3>
             <div class="backstage__wrapper">
-              <div class="backstage__subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+              <div class="backstage__subtitle">Good deeds do not go unnoticed, they are like lighthouses - they shine to those who are waiting for help.
+              </div>
               <div class="backstage__item">
-                <p class="backstage__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel esse
-                  reprehenderit, eius rem beatae soluta mollitia dolores fugiat nihil blanditiis, consequuntur
-                  voluptatem ex laboriosam non dolorum quod, ratione id molestias! Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Vel esse
-                  reprehenderit, eius rem beatae soluta mollitia dolores fugiat nihil blanditiis, consequuntur
-                  voluptatem ex laboriosam non dolorum quod, ratione id molestias!
+                <p class="backstage__text">In this difficult time for Ukraine, the whole world is united in a desperate struggle. Concerned citizens are doing everything they can to provide the population with everything they need and help those in need.
                 </p>
-                <div class="backstage__project">
-                  <a class="backstage__image icon-arrow_right_icon-2" data-fancybox="backstage-1"
+                <p class="backstage__text">From the first days of the war, we started volunteering, and a little later we were able to join the Ukrainian Red Cross Society. We are grateful to the Blago Life Foundation for the opportunity to help and be useful. In winter, we made more than 70 stoves for the Border Guard Service, aerial reconnaissance, and infantry. We sent the stoves to Bakhmut, Mykolaiv, and Kherson. More than 820 soldiers, our guys, were kept warm during this difficult period of frost. With their own hands, they created warmth and the opportunity for quick cooking. Helping and supporting the Armed Forces is a way to bring the Victory closer. Glory to the Armed Forces, Glory to the nation.
+                </p>
+                <div class="gallery__project">
+                  <a class="backstage__image icon-arrow_right_3" data-fancybox="backstage-1"
                     href="./image/backstage/01.jpg"><!--Ссылка на главную фото-->
                     <img alt="" src="./image/backstage/01.jpg" style="display: block;">
                   </a>
-                  <a data-fancybox="backstage-1" href="./image/backstage/02.jpg" class="backstage__image hide"><img
+                  <a data-fancybox="backstage-1" href="./image/backstage/02.jpg" class="gallery__image hide"><img
                       src="./image/backstage/02.jpg"></a>
-                  <a data-fancybox="backstage-1" href="./image/backstage/03.jpg" class="backstage__image hide"><img
+                  <a data-fancybox="backstage-1" href="./image/backstage/03.jpg" class="gallery__image hide"><img
                       src="./image/backstage/03.jpg"></a>
-                  <a data-fancybox="backstage-1" href="./image/backstage/04.jpg" class="backstage__image hide"><img
+                  <a data-fancybox="backstage-1" href="./image/backstage/04.jpg" class="gallery__image hide"><img
                       src="./image/backstage/04.jpg"></a>
-                  <a data-fancybox="backstage-1" href="./image/backstage/05.jpg" class="backstage__image hide"><img
+                  <a data-fancybox="backstage-1" href="./image/backstage/05.jpg" class="gallery__image hide"><img
                       src="./image/backstage/05.jpg"></a>
-                  <a data-fancybox="backstage-1" href="./image/backstage/06.jpg" class="backstage__image hide"><img
+                  <a data-fancybox="backstage-1" href="./image/backstage/06.jpg" class="gallery__image hide"><img
                       src="./image/backstage/06.jpg"></a>
-                  <a data-fancybox="backstage-1" href="./image/backstage/07.jpg" class="backstage__image hide"><img
+                  <a data-fancybox="backstage-1" href="./image/backstage/07.jpg" class="gallery__image hide"><img
                       src="./image/backstage/07.jpg"></a>
                 </div>
               </div>
@@ -732,26 +731,26 @@
 
     <footer class="footer page__section_3">
       <div class="footer__container _container">
-        <h3 class="footer__title-991">Давайте почнемо працювати разом</h3>
+        <h3 class="footer__title-991">Let's start working together</h3>
         <div class="footer__body">
           <div class="footer__column-form">
             <!-- <p class="footer__form-sub-title">Залишіть заявку і ми з вами зв'яжемось</p> -->
             <form class="footer__form" action="javascript:">
               <p>
-                <input class="footer__name" type="text" name="name" placeholder="Ім'я" required
+                <input class="footer__name" type="text" name="name" placeholder="Name" required
                   pattern="^([a-zA-Z'-]{1,50}|[а-яА-ЯёЁ'-]{1,50}|[А-Яа-яёЁЇїІіЄєҐґ'-]{1,50})$">
               </p>
               <p>
-                <input class="footer__number" type="tel" name="number" placeholder="Ваш номер телефону*" required
+                <input class="footer__number" type="tel" name="number" placeholder="Your phone number*" required
                   pattern="^(\+\d{1,5} ?)?\(?\d{2,3}\)?( |-)?\d{3}( |-)?\d{2}( |-)?\d{2}">
               </p>
               <p>
-                <button class="footer__button">Надіслати</button>
+                <button class="footer__button">Send</button>
               </p>
             </form>
           </div>
           <div class="footer__column-contacts">
-            <h3 class="footer__title">Давайте почнемо працювати разом</h3>
+            <h3 class="footer__title">Let's start working together</h3>
             <ul class="footer__contacts">
               <li class="footer__item">
                 <a href="tel:+380689479298" class="footer__number">+38 (068) 947 92 98</a>
@@ -768,10 +767,10 @@
                 </ul>
               </li>
             </ul>
-            <div class="footer__adress">Україна, Київ вул. Січових Стрільців, 23а</div>
+            <div class="footer__adress">Ukraine, Kyiv, 23a Sichovykh Striltsiv str.</div>
             <div class="footer__info-bott">
-              <p class="cop">© 2023 <span>zbuduemo.</span> Всі права захищені.</p>
-              <a class="pol popup-link" href="#popup-footer">Політика конфеденсійності<a>
+              <p class="cop">© 2023 <span>zbuduemo.</span> All rights reserved.</p>
+              <a class="pol popup-link" href="#popup-footer">Privacy policy<a>
             </div>
           </div>
         </div>
@@ -803,18 +802,18 @@
             <br>1. Загальні положення ця Політика обробки персональних даних складена в&nbsp;відповідно до&nbsp;вимог
             Федерального закону від&nbsp;27.07.2006. № 152-ФЗ «ПРО&nbsp;персональних даних» (далі&nbsp;— Закон
             про&nbsp;персональних даних) і&nbsp;визначає порядок обробки персональних даних і&nbsp;заходи
-            щодо&nbsp;забезпечення безпеки персональних даних, що вживаються Amiciburo (далі&nbsp;— Оператор).<br>1.1.
+            щодо&nbsp;забезпечення безпеки персональних даних, що вживаються zbuduemo (далі&nbsp;— Оператор).<br>1.1.
             Оператор ставить своєю найважливішою метою і&nbsp;умовою здійснення своєї діяльності дотримання прав
             і&nbsp;свобод людини і&nbsp;громадянина при обробці його персональних даних, в&nbsp;тому числі захисту прав
             на&nbsp;недоторканність приватного життя, особисту і&nbsp;сімейну таємницю.<br>1.2. Ця Політика Оператора
             щодо обробки персональних даних (далі— Політика) застосовується до всієї інформації, яку Оператор може
-            отримати про відвідувачів веб-сайту amiciburo.com.<br>2. Основні поняття, що використовуються
+            отримати про відвідувачів веб-сайту zbuduemo.com.<br>2. Основні поняття, що використовуються
             в&nbsp;політиці 2.1. Автоматизована обробка персональних даних&nbsp; - обробка персональних даних за
             допомогою засобів обчислювальної техніки.<br>2.2. Блокування персональних даних&nbsp; - тимчасове припинення
             обробки персональних даних (за&nbsp;винятком випадків, якщо обробка необхідна для уточ уточнення
             персональних даних).<br>2.3. Веб-сайт&nbsp;— сукупність графічних і&nbsp;інформаційних матеріалів,
             а&nbsp;також програм для&nbsp;ЕОМ і&nbsp;баз даних, що забезпечують їх&nbsp;доступність&nbsp;мережі інтернет
-            за&nbsp;мережевою адресою amiciburo.com<br>2.4. Інформаційна система персональних даних&nbsp; - сукупність
+            за&nbsp;мережевою адресою zbuduemo.com<br>2.4. Інформаційна система персональних даних&nbsp; - сукупність
             містяться в&nbsp;базах даних персональних даних, і&nbsp;забезпечують їх&nbsp;обробку інформаційних
             технологій і&nbsp;технічних засобів.<br>2.5. Знеособлення персональних даних&nbsp; - дії, в&nbsp;результаті
             яких неможливо визначити без використання додаткової інформації належність персональних даних конкретному
@@ -827,12 +826,12 @@
             (або) здійснюють обробку персональних даних, а&nbsp;також визначають цілі обробки персональних даних, склад
             персональних даних, що підлягають обробці, дії (операції), що здійснюються з&nbsp;персональними
             даними.<br>2.8. Персональні дані&nbsp; - будь-яка інформація, що відноситься прямо або побічно
-            до&nbsp;певного або визначеного користувача веб-сайту amiciburo.com<br>2.9. Персональні дані, дозволені
+            до&nbsp;певного або визначеного користувача веб-сайту zbuduemo.com<br>2.9. Персональні дані, дозволені
             суб'єктом персональних даних для&nbsp;поширення,&nbsp;— персональні дані, доступ необмеженого кола осіб
             до&nbsp;яким надано суб'єктом персональних даних шляхом дачі згоди на&nbsp;обробку персональних даних,
             дозволених суб'єктом персональних даних для&nbsp;поширення в&nbsp;порядку, передбаченому Законом
             про&nbsp;персональних даних (далі&nbsp;— персональні дані, дозволені для&nbsp;поширення).<br>2.10.
-            Користувач&nbsp; - будь-який відвідувач веб-сайту amiciburo.com.<br>2.11. Надання персональних даних&nbsp; -
+            Користувач&nbsp; - будь-який відвідувач веб-сайту zbuduemo.com.<br>2.11. Надання персональних даних&nbsp; -
             дії, спрямовані на&nbsp;розкриття персональних даних певній особі або певному колу осіб.<br>2.12. Поширення
             персональних даних&nbsp;— будь-які дії, спрямовані на&nbsp;розкриття персональних даних невизначеному колу
             осіб (передача персональних даних) або на&nbsp;ознайомлення з&nbsp;персональними даними необмеженого кола
@@ -929,7 +928,7 @@
             персональних даних Користувача:<br>- &nbsp;інформування користувача за допомогою відправки електронних
             листів;<br>- &nbsp;укладення, виконання та&nbsp;припинення цивільно-правових договорів;<br>- &nbsp;надання
             доступу Користувачеві до&nbsp;сервісів, інформації та / або матеріалів, що містяться на&nbsp;веб-сайті
-            amiciburo.com.<br>7.2. Також Оператор має право направляти користувачеві повідомлення про&nbsp;нові продукти
+            zbuduemo.com.<br>7.2. Також Оператор має право направляти користувачеві повідомлення про&nbsp;нові продукти
             і&nbsp;послуги, спеціальні пропозиції і&nbsp;різні події. Користувач завжди може відмовитися
             від&nbsp;отримання інформаційних повідомлень, направивши Оператору лист на&nbsp;адресу електронної пошти
             amiciburo@gmail.com з&nbsp;позначкою "Відмова від&nbsp;повідомлень про&nbsp;нові продукти і&nbsp;послуги
@@ -942,7 +941,7 @@
             &nbsp;згоди користувачів на&nbsp;обробку їх&nbsp;персональних даних, на&nbsp;обробку персональних даних,
             дозволених для&nbsp;поширення.<br>8.2. Оператор обробляє персональні дані Користувача тільки в&nbsp;разі їх
             заполнения заповнення та/або відправки користувачем самостійно через спеціальні форми, розташовані
-            на&nbsp;сайті amiciburo.com/ru або спрямовані Оператору за допомогою електронної пошти. Заповнюючи
+            на&nbsp;сайті zbuduemo.com/en або спрямовані Оператору за допомогою електронної пошти. Заповнюючи
             відповідні форми та / або відправляючи свої персональні дані Оператору, Користувач висловлює свою згоду з
             цією Політикою.<br>8.3. Оператор обробляє знеособлені дані про&nbsp;Користувача в&nbsp;випадку, якщо це
             дозволено в&nbsp;налаштуваннях браузера користувача (включено збереження файлів «cookie» і&nbsp;використання
@@ -1014,7 +1013,7 @@
             допомогою електронної пошти amiciburo@gmail.com.<br>14.2. У цьому документі будуть відображені будь-які
             зміни Політики обробки персональних даних Оператором. Політика діє безстроково до&nbsp;заміни її&nbsp;новою
             версією.<br>14.3. Актуальна версія Політики в&nbsp;вільному доступі розташована в&nbsp;мережі Інтернет
-            за&nbsp;адресою amiciburo.com/privacy/ukr<br><br>
+            за&nbsp;адресою zbuduemo.com/privacy/ukr<br><br>
           </div>
         </div>
       </div>

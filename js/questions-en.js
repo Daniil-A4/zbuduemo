@@ -1,41 +1,41 @@
 const questions = [
   {
-    title: '№1. Оберіть тип нерухомості ',
+    title: '№1. SELECT THE TYPE OF REAL ESTATE ',
     name: 'type',
     answers: [
       { 
-        text: 'Новобудова', 
-        value: 'Новобудова',
+        text: 'New building', 
+        value: 'New building',
       },
       {
-        text: 'Вторинне житло',
-        value: 'Вторинне житло',
+        text: 'Secondary housing',
+        value: 'Secondary housing',
       },
       {
-        text: 'Будинок/Коттедж ',
-        value: 'Будинок/Коттедж ',
+        text: 'House/Cottage ',
+        value: 'House/Cottage ',
       },
       {
-        text: 'Комерційна',
-        value: 'Комерційна',
+        text: 'Commercial',
+        value: 'Commercial',
       },
     ],
   },
   {
-    title: '№2. Вкажіть загальну площу об’єкту: ',
+    title: '№2. INDICATE THE TOTAL AREA OF THE FACILITY: ',
     name: 'area',
     answers: [
       {
-        text: 'до 50 м2',
-        value: 'до 50 м2',
+        text: 'to 50 m2',
+        value: 'to 50 m2',
       },
       {
-        text: '50-80 м2',
-        value: '50-80 м2',
+        text: '50-80 m2',
+        value: '50-80 m2',
       },
       {
-        text: '80-100 м2',
-        value: '80-100 м2',
+        text: '80-100 m2',
+        value: '80-100 m2',
       },
       {
         text: '100+ м2',
@@ -44,42 +44,42 @@ const questions = [
     ],
   },
   {
-    title: '№3. Чи є дизайн-проєкт ?',
+    title: '№3. IS THERE A DESIGN PROJECT?',
     name: 'project',
     answers: [
       { 
-        text: 'Так', 
-        value: 'Так',
+        text: 'Yes', 
+        value: 'Yes',
       },
       {
-        text: 'Ні',
-        value: 'Ні',
+        text: 'No',
+        value: 'No',
       },
       {
-        text: ' Хочу замовити дизайн проект ',
-        value: ' Хочу замовити дизайн проект ',
+        text: ' Want to order a design project ',
+        value: ' Want to order a design project ',
       },
     ],
   },
   {
-    title: '№4. Коли потрібно почати ремонтні роботи?',
+    title: '№4. WHEN DO I NEED TO START REPAIR WORK?',
     name: 'start',
     answers: [
       {
-        text: 'Якнайшвидше ',
-        value: 'Якнайшвидше ',
+        text: 'As soon as possible ',
+        value: 'As soon as possible ',
       },
       {
-        text: 'Протягом 2х тижнів',
-        value: 'Протягом 2х тижнів',
+        text: 'Within 2 weeks ',
+        value: 'Within 2 weeks ',
       },
       {
-        text: 'Протягом місяця',
-        value: 'Протягом місяця',
+        text: 'Within a month ',
+        value: 'Within a month ',
       },
       {
-        text: 'Все залежить від ціни',
-        value: 'Все залежить від ціни',
+        text: 'It all depends on the price ',
+        value: 'It all depends on the price ',
       },
     ],
   },
